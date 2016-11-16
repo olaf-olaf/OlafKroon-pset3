@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     
     var searchRequest = String()
+    var segJson = [String: String]()
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -54,32 +55,32 @@ class ViewController: UIViewController {
                 
                 // Parse the data into a json
                 let json = try! JSONSerialization.jsonObject(with: data, options: [])
+//                print("JSON)")
                 print(json)
+                self.segJson = json as! [String : String]
+//                print(self.segJson)
+//                print("MEMBER")
+//                print(self.segJson["imdbRating"]!)
+//                print("LINK")
+//                print(self.segJson["Poster"]!)
                 
             }
             
             task.resume()
         }
 
-        
-        
+    }
+
+    // segue 'contents' string to the 'rawText' variable in the the next view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination: SecondViewController = segue.destination as! SecondViewController
+        destination.data = segJson
     }
     
-    func getJson() -> AnyObject {
-        <#function body#>
-    }
+    
 }
 
-//override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//    
-//    // Create a variable that you want to send
-//    var newProgramVar = Program(category: "Some", name: "Text")
-//    
-//    // Create a new variable to store the instance of PlayerTableViewController
-//    let destinationVC = segue.destinationViewController as PlayerTableViewController
-//    destinationVC.programVar = newProgramVar
-//}
-//}
+
 
 
 

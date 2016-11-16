@@ -15,6 +15,7 @@
 		ED0D574A1DDA003C0036EA79 /* MovielistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D57491DDA003C0036EA79 /* MovielistTests.swift */; };
 		ED0D57551DDA003C0036EA79 /* MovielistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D57541DDA003C0036EA79 /* MovielistUITests.swift */; };
 		ED7876481DDC746C00D391CF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7876471DDC746C00D391CF /* SecondViewController.swift */; };
+		ED78764A1DDC92F500D391CF /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7876491DDC92F500D391CF /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		ED0D57541DDA003C0036EA79 /* MovielistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovielistUITests.swift; sourceTree = "<group>"; };
 		ED0D57561DDA003C0036EA79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED7876471DDC746C00D391CF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		ED7876491DDC92F500D391CF /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				ED0D57341DDA003C0036EA79 /* AppDelegate.swift */,
 				ED0D57361DDA003C0036EA79 /* ViewController.swift */,
 				ED0D57381DDA003C0036EA79 /* Main.storyboard */,
+				ED7876491DDC92F500D391CF /* MovieCell.swift */,
 				ED7876471DDC746C00D391CF /* SecondViewController.swift */,
 				ED0D573B1DDA003C0036EA79 /* Assets.xcassets */,
 				ED0D573D1DDA003C0036EA79 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				ED7876481DDC746C00D391CF /* SecondViewController.swift in Sources */,
 				ED0D57371DDA003C0036EA79 /* ViewController.swift in Sources */,
+				ED78764A1DDC92F500D391CF /* MovieCell.swift in Sources */,
 				ED0D57351DDA003C0036EA79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

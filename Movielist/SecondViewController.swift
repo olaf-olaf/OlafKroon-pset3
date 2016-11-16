@@ -10,12 +10,15 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var data: [AnyObject] = []
+    var data = [String: String]()
     
     override func viewDidLoad() {
+        
+        print("HALLLOOOO")
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("DATA IN SECOND VIEW CONTROLLER")
         print (data)
     }
 
