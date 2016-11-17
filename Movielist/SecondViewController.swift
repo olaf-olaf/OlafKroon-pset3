@@ -8,11 +8,17 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var data = [String: String]()
     
+    // This is an array of dictionaries.
+    var dictionaries = [[String: Int]]()
+    
+    
+    
     override func viewDidLoad() {
+        
         
         print("HALLLOOOO")
         super.viewDidLoad()
@@ -25,6 +31,14 @@ class SecondViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
     
 
